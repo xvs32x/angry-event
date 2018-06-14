@@ -16,4 +16,4 @@ export function sortProjects(a: ProjectI, b: ProjectI): number {
 export const projectAdapter: EntityAdapter<ProjectI> = createEntityAdapter<ProjectI>({
     selectId: project => project.id,
     sortComparer: sortProjects
-})
+});
