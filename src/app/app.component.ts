@@ -21,8 +21,7 @@ import { Component } from '@angular/core';
           <div id="navbarMenuHeroC" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
-                <a class="button is-info is-inverted"
-                  href="https://github.com/xvs32x/self-port" target="_blank">
+                <a class="button is-info is-inverted" [routerLink]="['/auth']">
                   <span class="icon">
                     <i class="fas fa-sign-in-alt"></i>
                   </span>
