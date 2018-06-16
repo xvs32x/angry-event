@@ -24,9 +24,9 @@ import { Component } from '@angular/core';
                 <a class="button is-info is-inverted"
                   href="https://github.com/xvs32x/self-port" target="_blank">
                   <span class="icon">
-                    <i class="fab fa-github"></i>
+                    <i class="fas fa-sign-in-alt"></i>
                   </span>
-                  <span>Смотреть код</span>
+                  <span>Login / Register</span>
                 </a>
               </span>
             </div>

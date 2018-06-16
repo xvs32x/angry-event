@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { AppComponent }  from './app.component';
+import { AppComponent } from './app.component';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { EffectsModule } from '@ngrx/effects';
 import { ProjectModule } from './modules/project/project.module';
@@ -12,6 +12,8 @@ import { ProjectModule } from './modules/project/project.module';
 import { routes } from './routes';
 import { reducers } from './reducers';
 import { environment } from '../environments/environment';
+import { DemoModule } from './modules/demo/demo.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [ AppComponent ],
@@ -27,7 +29,9 @@ import { environment } from '../environments/environment';
       logOnly: environment.production, // Restrict extension to log-only mode
     }),
     EffectsModule.forRoot([]),
-    ProjectModule
+    HttpClientModule,
+    DemoModule,
+    ProjectModule,
   ],
   providers: [],
   bootstrap: [ AppComponent ]
